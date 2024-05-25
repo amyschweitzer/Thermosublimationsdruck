@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --inner-distance: 23rem;
+    --content-distance: 1rem;
+    --nav-height: 4rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: white;
+
+}
+
+a {
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 13pt;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--nav-height));
+    margin-top: var(--nav-height);
+    background-image: url("./src/header.jpg");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items:  center;
+    flex-direction: row;
+    background-color: #001d38;
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    width: calc(100% - 4rem);
+    padding: 0 2rem;
+    -webkit-box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.44); 
+    box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.44);
+    z-index: 2;
+}
+
+.logo {
+    margin-right: auto;
+    font-weight: 800;
+}
+
+.nav_link {
+    margin: 0 1rem;
+
+}
+
+a {
+    text-decoration: none;
+    transition-duration: 0.2s;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: scale(0.95);
+    color: #0e71b8
+
+}
+
+section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    scroll-margin-top: var(--nav-height);
+}
+.content_container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 3rem var(--inner-distance);
+    width: calc(100% - calc(2 * var(--inner-distance)));
+    z-index: 1;
+
+
+}
+
+.content_row {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - var(--content-distance));
+    height: 100%;
+    margin: 2rem 0 0 0;
+
+}
+
+.content_column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    margin: 0 var(--content-distance);
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 2rem var(--content-distance);
+    font-size: 3rem;
+    font-weight: 700;
+    overflow: inherit;
+}
+
+li {
+    margin: 0 0 1rem 0
+}
+
+/*  Bilder  */
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#img_history_1 {
+    aspect-ratio: 1/1;
+}
+
+#img_funktion_1 {
+    height: auto;
+}
+
+#img_funktion_2 {
+    height: auto;
+}
+
+.bildtext {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 2rem 0;
+
+}
+
+
+.bg_darkblue {
+    background-color: #001d38;
+}
+
+.bg_lightblue {
+    background-color: #0e71b8;
+}
+
+.bg_grey {
+    background-color: #141414;
+}
+
+#quellen li::marker {
+    content: "["  counter(list-item) "] ";
+}
+
+#funktionsweise::before, #einsatzgebiete::before, #geschichte::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    box-sizing: border-box;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: 102%;
+    z-index: 0;
+}
+
+#einsatzgebiete::before {
+    background-image: url("./src/wellen/wave1.svg");
+}
+
+#funktionsweise::before {
+    background-image: url("./src/wellen/wave2.svg");
+}
+
+#geschichte::before {
+    background-image: url("./src/wellen/wave3.svg");
+}
+
+
+@media only screen and (max-width: 1800px) {
+
+    :root {
+        --inner-distance: 15rem;
+        --content-distance: 1rem;
+    }
+
+   
+}
+
+@media only screen and (max-width: 1500px) {
+
+    :root {
+        --inner-distance: 10rem;
+        --content-distance: 1rem;
+    }
+
+   
+}
+
+@media only screen and (max-width: 1200px) {
+
+    :root {
+        --inner-distance: 7rem;
+        --content-distance: 0rem;
+    }
+
+    .content_row {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 5rem;
+
+    }
+    
+    .nav_link {
+        display: none;
+    }
+   
+}
+
+@media only screen and (max-width: 600px) {
+
+    :root {
+        --inner-distance: 1rem;
+        --content-distance: 0rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+
+    .content_row {
+        flex-direction: column;
+
+    }
+   
+}
