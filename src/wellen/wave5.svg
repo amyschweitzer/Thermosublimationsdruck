@@ -3,8 +3,10 @@
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1440 320" style="enable-background:new 0 0 1440 320;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#0E71B8;}
+	.st0{fill:#001D38;}
 </style>
-<path class="st0" d="M0,318l120-5.3c120-5.7,360-15.7,600-16c240,0.3,480,10.3,600,16l120,5.3v64h-120c-120,0-360,0-600,0
-	s-480,0-600,0H0V318z"/>
+<path class="st0" d="M0,267l120,10.7C240,288,480,310,720,315s480-5,600-10.7l120-5.3v160h-120c-120,0-360,0-600,0s-480,0-600,0H0
+	V267z"/>
+<image style="overflow:visible;" width="176" height="461" xlink:href="3DE3880D.jpg"  transform="matrix(1 0 0 1 -200 -70.5)">
+</image>
 </svg>

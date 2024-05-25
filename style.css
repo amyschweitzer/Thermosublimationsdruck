@@ -172,7 +172,7 @@ img {
     content: "["  counter(list-item) "] ";
 }
 
-#funktionsweise::before, #einsatzgebiete::before, #geschichte::before {
+#funktionsweise::before, #einsatzgebiete::before, #geschichte::before, #druckverfahren::before, #druckvorlagen::before, #druckstueckkosten::before {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -198,6 +198,16 @@ img {
 #geschichte::before {
     background-image: url("./src/wellen/wave3.svg");
 }
+
+#druckverfahren::before {
+    background-image: url("./src/wellen/wave4.svg");
+}
+
+#druckvorlagen::before {
+    background-image: url("./src/wellen/wave5.svg");
+}
+
+
 
 
 @media only screen and (max-width: 1800px) {
